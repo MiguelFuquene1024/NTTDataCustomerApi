@@ -2,7 +2,7 @@ package com.serviceRest.CustomerInformationApi.controller;
 
 import com.serviceRest.CustomerInformationApi.exception.CustomerException;
 import com.serviceRest.CustomerInformationApi.model.entities.Customer;
-import com.serviceRest.CustomerInformationApi.service.CustomerService;
+import com.serviceRest.CustomerInformationApi.service.CustomerServiceRest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -16,7 +16,7 @@ import java.util.Optional;
 public class CustomerController {
 
     @Autowired
-    private CustomerService customerService;
+    private CustomerServiceRest customerService;
 
     @PostMapping
     private ResponseEntity<Optional<Customer>> getCustomerInfo(@RequestBody Customer customer) throws CustomerException{

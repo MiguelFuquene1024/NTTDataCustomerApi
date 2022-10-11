@@ -4,13 +4,11 @@ import com.serviceRest.CustomerInformationApi.exception.CustomerException;
 import com.serviceRest.CustomerInformationApi.model.dtos.CustomerDTO;
 import com.serviceRest.CustomerInformationApi.model.entities.Customer;
 import com.serviceRest.CustomerInformationApi.repository.CustomerRepository;
-import com.serviceRest.CustomerInformationApi.service.CustomerService;
+import com.serviceRest.CustomerInformationApi.service.CustomerServiceRest;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.boot.test.web.client.TestRestTemplate;
 
 import java.util.Optional;
 
@@ -23,7 +21,7 @@ class CustomerInformationApiApplicationTests {
 	@Autowired
 
 	@Mock
-	private CustomerService customerService;
+	private CustomerServiceRest customerService;
 	@Mock
 	private CustomerRepository customerRepository;
 
