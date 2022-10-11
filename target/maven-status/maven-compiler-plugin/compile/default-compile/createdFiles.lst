@@ -1,0 +1,7 @@
+com\serviceRest\CustomerInformationApi\exception\CustomerException.class
+com\serviceRest\CustomerInformationApi\CustomerInformationApiApplication.class
+com\serviceRest\CustomerInformationApi\controller\CustomerController.class
+com\serviceRest\CustomerInformationApi\repository\CustomerRepository.class
+com\serviceRest\CustomerInformationApi\service\CustomerService.class
+com\serviceRest\CustomerInformationApi\model\dtos\CustomerDTO.class
+com\serviceRest\CustomerInformationApi\model\entities\Customer.class

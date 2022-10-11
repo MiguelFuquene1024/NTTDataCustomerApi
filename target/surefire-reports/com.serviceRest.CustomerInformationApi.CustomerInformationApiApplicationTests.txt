@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.serviceRest.CustomerInformationApi.CustomerInformationApiApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 14.6 s <<< FAILURE! - in com.serviceRest.CustomerInformationApi.CustomerInformationApiApplicationTests
+findByDocumentTypeAndNumberDocument  Time elapsed: 0.491 s  <<< ERROR!
+org.springframework.dao.DataIntegrityViolationException: could not execute query; SQL [select customer0_.id as id1_0_, customer0_.address as address2_0_, customer0_.document_type as document3_0_, customer0_.first_lastname as first_la4_0_, customer0_.first_name as first_na5_0_, customer0_.number_document as number_d6_0_, customer0_.phone as phone7_0_, customer0_.residence_city as residenc8_0_, customer0_.second_lastname as second_l9_0_, customer0_.second_name as second_10_0_ from customer customer0_ where customer0_.document_type=? and customer0_.number_document=?]; nested exception is org.hibernate.exception.DataException: could not execute query
+	at com.serviceRest.CustomerInformationApi.CustomerInformationApiApplicationTests.findByDocumentTypeAndNumberDocument(CustomerInformationApiApplicationTests.java:46)
+Caused by: org.hibernate.exception.DataException: could not execute query
+	at com.serviceRest.CustomerInformationApi.CustomerInformationApiApplicationTests.findByDocumentTypeAndNumberDocument(CustomerInformationApiApplicationTests.java:46)
+Caused by: org.postgresql.util.PSQLException: Bad value for type int : 3003775560
+	at com.serviceRest.CustomerInformationApi.CustomerInformationApiApplicationTests.findByDocumentTypeAndNumberDocument(CustomerInformationApiApplicationTests.java:46)
+
